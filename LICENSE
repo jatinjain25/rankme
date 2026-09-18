@@ -1,0 +1,19 @@
+Copyright (c) 2026 Jatin Jain. All rights reserved.
+
+This repository contains a Claude Code plugin definition: a marketplace
+manifest, a plugin manifest, and command documentation.
+
+Permission is granted to install and use this plugin for its intended purpose,
+which is to install and run the Builder collector on your own machine.
+
+That is the whole of the permission granted. No licence is granted, expressly or
+by implication, to:
+
+  - copy, redistribute, sell or sublicense these files;
+  - create derivative works from them;
+  - use them, or anything described in them, to design, build, train on, or
+    reproduce the behaviour of the Builder collector or any part of the service
+    it communicates with.
+
+No licence to any underlying source code is granted or implied. The collector is
+proprietary and its source is not public.

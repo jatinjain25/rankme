@@ -1,0 +1,17 @@
+# Deny everything, then allow exactly the plugin.
+#
+# This repository is a Claude Code plugin and nothing else. No source, no
+# binaries, no build output, ever. An allowlist rather than a denylist because a
+# denylist only stops the mistakes somebody thought of in advance.
+*
+!.gitignore
+!README.md
+!LICENSE
+!.claude-plugin/
+!.claude-plugin/marketplace.json
+!plugins/
+!plugins/rankme/
+!plugins/rankme/.claude-plugin/
+!plugins/rankme/.claude-plugin/plugin.json
+!plugins/rankme/commands/
+!plugins/rankme/commands/*.md

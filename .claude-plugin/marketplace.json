@@ -1,0 +1,16 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "paxel",
+  "description": "Rank yourself as a coder. Measured.",
+  "owner": { "name": "Jatin Jain", "url": "https://github.com/jatinjain25" },
+  "plugins": [
+    {
+      "name": "rankme",
+      "description": "Measure the AI coding work already on this machine and show the evidence. Publishing stays a decision you make in your own terminal.",
+      "author": { "name": "Jatin Jain" },
+      "homepage": "https://github.com/jatinjain25/rankme",
+      "category": "productivity",
+      "source": "./plugins/rankme"
+    }
+  ]
+}

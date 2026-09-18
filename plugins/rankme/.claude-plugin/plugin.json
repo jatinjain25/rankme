@@ -1,0 +1,8 @@
+{
+  "name": "rankme",
+  "description": "Measure the AI coding work already on this machine and show the evidence. Publishing stays a decision you make in your own terminal.",
+  "version": "0.1.4",
+  "author": { "name": "Jatin Jain" },
+  "homepage": "https://github.com/jatinjain25/rankme",
+  "keywords": ["leaderboard", "ranking", "claude-code", "cursor", "codex"]
+}
