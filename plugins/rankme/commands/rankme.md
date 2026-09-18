@@ -36,10 +36,17 @@ State it up front. Do not discover it by failing.
    curl -fsSL https://builder-production-5049.up.railway.app/run.sh | sh -s -- --install-only
    ```
 
-   `--install-only` exits **0**. It installs the binary and the `rankme` wrapper, and
-   records which service to talk to, then stops before the step that would need a
-   terminal. If you see a non-zero exit here, that is a real failure — report it rather
-   than continuing.
+   **Judge this by the outcome, not the exit code**, and re-run the check from step 1 to
+   decide whether it worked.
+
+   A current server understands `--install-only`, installs, records which service to talk
+   to, and exits 0. An older one does not know the flag, ignores it, installs anyway, then
+   reaches a step that needs a terminal, prints "No terminal available", and exits 3. The
+   install succeeded in both cases. Treat a missing binary as the failure, never the exit
+   code.
+
+   If the binary is present but `rankme status` reports an `api` of `127.0.0.1`, that is the
+   older path: tell the user to run `rankme` in their terminal, and skip to step 5.
 
 3. **Show what would be read.**
 
